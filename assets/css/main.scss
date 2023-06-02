@@ -1,0 +1,86 @@
+@import "open-props/style";
+@import './_buttons';
+@import './_stacks';
+@import './_fonts';
+
+html {
+  color-scheme: dark;
+  --brand: #ff00ff;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+html,
+body {
+  background-color: var(--gray-12);
+  block-size: 100%;
+  color: var(--gray-2);
+}
+
+body {
+  font-family: 'Satoshi-Bold';
+}
+
+#__nuxt {
+  display: contents;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.panel {
+  padding: var(--size-3) var(--size-4);
+  border-radius: var(--radius-2);
+  background-color: var(--gray-9);
+}
+
+
+input:not([type=range], [type=color]),
+textarea {
+  background-color: var(--gray-12);
+  border-radius: var(--radius-2);
+  border: 0;
+  color: var(--gray-0);
+  font-family: 'Satoshi-Bold';
+  font-size: var(--font-size-4);
+  inline-size: 100%;
+  line-height: 1.2;
+  padding: var(--size-2) calc(var(--size-3) / 1.5);
+  resize: none;
+}
+
+input:not([type=range], [type=color]):focus,
+textarea:focus {
+  outline: 1px solid var(--gray-8);
+}
+
+dialog {
+  border: 0;
+  margin: auto;
+  max-height: 90vh;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
