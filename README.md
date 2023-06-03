@@ -1,42 +1,30 @@
-# Nuxt 3 Minimal Starter
+# OG Video - a Nuxt video machine!
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![screenshot](static/1200x630.jpg)
 
-## Setup
+## Demo
 
-Make sure to install the dependencies:
+https://og-video-nuxt.netlify.app/
 
-```bash
-# yarn
-yarn install
+This is a project to learn [Svelte.js](https://svelte.dev)! This is the Nuxt version
 
-# npm
-npm install
+It's for producing short blog intro videos
 
-# pnpm
-pnpm install
-```
+https://www.blackspike.com/blog/learning-svelte-by-building-a-single-page-application
 
-## Development Server
+## Uses
 
-Start the development server on `http://localhost:3000`
+- [Fabric.js](http://fabricjs.com/) for the canvas
+- [animejs.com](https://animejs.com/) for the animation
+- [Open Props](https://open-props.style/) for the style tokens
+- [Font Face Observer](https://github.com/bramstein/fontfaceobserver) to get fonts to load into fabric.js
+- [Satoshi](https://www.fontshare.com/fonts/satoshi) font
+- [Mountain Photo](https://unsplash.com/photos/JgOeRuGD_Y4) by [John Towner](https://unsplash.com/@heytowner) on Unsplash
 
-```bash
-npm run dev
-```
+- Vanilla js for the video recording (`MediaRecorder` - cool!)
 
-## Production
+Send any comments to https://mastodon.cloud/@blackspike
 
-Build the application for production:
 
-```bash
-npm run build
-```
+<video src="/static/demo.mp4" controls title="Title"></video>
 
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
