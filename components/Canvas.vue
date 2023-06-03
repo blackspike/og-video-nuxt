@@ -444,7 +444,7 @@ defineExpose({
   <canvas :width="canvasSize" :height="canvasSize" :style="`--canvasSize: {canvasSize}px`" id="canvas" />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 canvas {
   aspect-ratio: var(--canvasSize) / var(--canvasSize);
 }

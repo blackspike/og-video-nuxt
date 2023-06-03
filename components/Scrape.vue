@@ -54,7 +54,8 @@ onMounted(() => {
     </button>
   </form>
 </template>
-<style>
+
+<style scoped>
 .fetchLoading {
   pointer-events: none;
   opacity: 0.3;

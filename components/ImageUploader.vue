@@ -60,7 +60,7 @@ const test = () => console.log('test')
   <!--  -->
   <div class="dropzone panel" :class="{ dragOver }" @dragenter="dragOver = true" @dragleave="dragOver = false"
     @drop="handleDragDrop" @dragover.prevent :style="`--bg: url(${watermark ? watermark : ''});
-                                                    background-size: ${imageType === 'bg' ? 'cover' : 'contain'
+                                                        background-size: ${imageType === 'bg' ? 'cover' : 'contain'
       }`">
     <form class="dropzone-form">
       <input class="file-picker" type="file" :id="imageType + 'input'" accept="image/png, image/jpeg, image/webp"
@@ -69,7 +69,8 @@ const test = () => console.log('test')
     </form>
   </div>
 </template>
-<style lang="scss">
+
+<style lang="scss" scoped>
 .dropzone {
   block-size: 100%;
   color: var(--gray-4);

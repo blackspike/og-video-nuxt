@@ -34,7 +34,7 @@ const record = () => canvas.value.record()
   <VideoDialog />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 main {
   margin: auto;
   display: grid;

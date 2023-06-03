@@ -124,7 +124,7 @@ const emit = defineEmits(["play", "reset", "record"])
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 label {
   color: var(--gray-5);
   font-family: "Inter";

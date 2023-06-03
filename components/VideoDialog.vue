@@ -35,7 +35,7 @@ const toggleDialog = () => {
 </template>
 
 
-<style>
+<style scoped>
 dialog {
   max-height: 80vh;
   margin: auto;

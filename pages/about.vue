@@ -97,7 +97,8 @@ const clearStorage = () => {
     </main>
   </div>
 </template>
-<style>
+
+<style scoped>
 .container {
   width: 100%;
   display: grid;
